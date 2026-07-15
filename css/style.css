@@ -1,88 +1,340 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Global Styling */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background-color: #f8f9fa;
-    font-family: Arial, Helvetica, sans-serif;
+
+body{
+
+    background-color:#f4f7fb;
+
+    font-family:'Poppins', Arial, sans-serif;
+
 }
 
-/* Sidebar */
-.sidebar {
-    background-color: #0d6efd;
-    min-height: 100vh;
-    padding: 25px;
+
+
+/* ================= Sidebar ================= */
+
+
+.sidebar{
+
+    background:linear-gradient(180deg,#0d6efd,#003b8f);
+
+    min-height:100vh;
+
+    padding:30px 20px;
+
 }
 
-.logo {
-    color: white;
-    margin-bottom: 30px;
+
+
+/* Airline Logo */
+
+.logo{
+
+    color:white;
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
 }
 
-.nav-link {
-    color: white;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
+
+
+.logo span{
+
+    display:block;
+
+    font-size:13px;
+
+    font-weight:300;
+
+    margin-top:8px;
+
 }
 
-.nav-link:hover {
-    background-color: white;
-    color: #0d6efd;
-}
 
-/* Main Content */
-.main-content {
-    padding: 30px;
-}
 
-/* Dashboard Cards */
-.card {
-    border: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
+/* Navigation Links */
 
-.card:hover {
-    transform: translateY(-5px);
-}
 
-.card h2 {
-    color: #0d6efd;
-    font-weight: bold;
-}
-/* Footer */
+.nav-link{
 
-footer {
-    margin-top: 30px;
-    padding: 15px 0;
-    border-top: 1px solid #ddd;
-}
+    color:white;
 
-footer p {
-    color: #6c757d;
-    font-size: 14px;
-    margin: 0;
-}
-/* Sidebar Icons */
-.nav-link i {
-    margin-right: 8px;
-}
+    padding:12px 15px;
 
-/* Dashboard Cards */
-.card {
-    border: none;
-    transition: transform 0.3s ease;
-}
+    margin-bottom:12px;
 
-.card:hover {
-    transform: translateY(-5px);
-}
-.dashboard-image{
-    width:100%;
-    height:320px;
-    object-fit:cover;
     border-radius:10px;
+
+    transition:0.3s;
+
+    font-size:16px;
+
+}
+
+
+
+.nav-link i{
+
+    margin-right:10px;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* Hover + Active */
+
+
+.nav-link:hover,
+
+.nav-link.active{
+
+
+    background-color:white;
+
+    color:#0d6efd !important;
+
+
+}
+
+
+
+
+
+/* ================= Main Content ================= */
+
+
+.main-content{
+
+    padding:35px;
+
+}
+
+
+
+/* Header Button */
+
+
+.btn-primary{
+
+
+    border-radius:20px;
+
+    padding:10px 20px;
+
+
+}
+
+
+
+
+
+/* ================= Dashboard Cards ================= */
+
+
+.card{
+
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+    transition:0.3s;
+
+    height:100%;
+
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+.card-body i{
+
+
+    font-size:45px;
+
+
+}
+
+
+
+.card h5{
+
+
+    font-weight:600;
+
+}
+
+
+
+.card h2{
+
+
+    color:#0d6efd;
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+
+
+/* ================= Image ================= */
+
+
+.dashboard-image{
+
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+
+}
+
+
+
+/* ================= Footer ================= */
+
+
+footer{
+
+
+    margin-top:30px;
+
+    padding:15px 0;
+
+    border-top:1px solid #ddd;
+
+
+}
+
+
+
+footer p{
+
+
+    color:#6c757d;
+
+    font-size:14px;
+
+
+}
+
+
+
+/* ================= Tables (Tickets, Arrivals, Departures) ================= */
+
+
+.table{
+
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.table thead{
+
+
+    background:#0d6efd;
+
+    color:white;
+
+
+}
+
+
+
+.table-hover tbody tr:hover{
+
+
+    background-color:#f1f6ff;
+
+
+}
+
+
+
+/* Badges */
+
+
+.badge{
+
+
+    padding:8px 12px;
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:768px){
+
+
+.sidebar{
+
+    min-height:auto;
+
+}
+
+
+
+.main-content{
+
+    padding:20px;
+
+}
+
+
 }
